@@ -82,7 +82,8 @@ public class NativeActivity extends Activity implements SurfaceHolder.Callback2,
     private boolean mDispatchingUnhandledKey;
 
     private boolean mDestroyed;
-    
+
+	// 这一系列JNI函数都在android_app_NativeActivity.cpp中注册的
     private native int loadNativeCode(String path, String funcname, MessageQueue queue,
             String internalDataPath, String externalDataPath, int sdkVersion,
             AssetManager assetMgr, byte[] savedState);

@@ -707,6 +707,7 @@ loadNativeCode_native(JNIEnv* env, jobject clazz, jstring path, jstring funcName
             rawSavedSize = env->GetArrayLength(savedState);
         }
 
+		// 默认情况下调用android_native_app_glue中的ANativeActivity_onCreate函数
         code->createActivityFunc(code, rawSavedState, rawSavedSize);
 
         if (rawSavedState != NULL) {
