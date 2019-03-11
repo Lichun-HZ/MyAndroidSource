@@ -1,1 +1,12 @@
-<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-66082af7-8384-4453-a273-9af01faeeaed"></attachment><p>    <span style="color: rgb(86, 156, 214);">public</span> <span style="color: rgb(86, 156, 214);">void</span> <span style="color: rgb(220, 220, 170);">ReleaseSprite</span>()</p><p>    {</p><p>        <span style="color: rgb(86, 156, 214);">this</span>.<span style="color: rgb(156, 220, 254);">_curAtlasSlot</span> = <span style="color: rgb(86, 156, 214);">null</span>;</p><p>        <span style="color: rgb(86, 156, 214);">this</span>.<span style="color: rgb(156, 220, 254);">_forcedSpriteData</span> = <span style="color: rgb(86, 156, 214);">null</span>;</p><p>        <span style="color: rgb(86, 156, 214);">this</span>.<span style="color: rgb(156, 220, 254);">m_ReplacePalette</span> = <span style="color: rgb(86, 156, 214);">null </span></p><p>        <span style="color: rgb(86, 156, 214);">this</span>.<span style="color: rgb(220, 220, 170);">OnReleaseSprite</span>();</p><p><br></p><p>        <span style="color: rgb(86, 156, 214);">this</span>.<span style="color: rgb(220, 220, 170);">SetSprite</span>(<span style="color: rgb(86, 156, 214);">null</span>, <span style="color: rgb(86, 156, 214);">true</span>)</p><p>        <span style="color: rgb(86, 156, 214);">this</span>.<span style="color: rgb(220, 220, 170);">SetMaterial</span>(<span style="color: rgb(86, 156, 214);">null</span>, <span style="color: rgb(86, 156, 214);">true</span>);</p><p>    }</p><p><br></p>
+<attachment contenteditable="false" data-atts="%5B%5D" data-aid=".atts-66082af7-8384-4453-a273-9af01faeeaed"></attachment><pre class="ql-syntax" spellcheck="false">    public void ReleaseSprite()
+    {
+        this._curAtlasSlot = null;
+        this._forcedSpriteData = null;
+        this.m_ReplacePalette = null 
+        this.OnReleaseSprite();
+
+        this.SetSprite(null, true)
+        this.SetMaterial(null, true);
+    }
+
+</pre><p><br></p>
